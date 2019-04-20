@@ -41,6 +41,8 @@ extern _Complex double globalComplexDouble;
 extern _Complex double globalComplexLongDouble;
 extern char globalChar;
 extern int64_t globalInt64;
+extern void *globalVoidPtrSet;
+extern void *globalVoidPtrNull;
 extern collection_t globalStruct;
 extern int globalStructSize;
 extern short globalArray[3];
