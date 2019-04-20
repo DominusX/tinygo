@@ -41,6 +41,7 @@ func main() {
 	println("complex double:", C.globalComplexDouble)
 	println("complex long double:", C.globalComplexLongDouble)
 	println("char match:", C.globalChar == 100)
+	println("int64_t match:", C.globalInt64 == C.int64_t(-(2<<40)))
 
 	// complex types
 	println("struct:", C.int(unsafe.Sizeof(C.globalStruct)) == C.globalStructSize, C.globalStruct.s, C.globalStruct.l, C.globalStruct.f)
